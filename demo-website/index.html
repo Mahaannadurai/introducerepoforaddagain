@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power of Plain JavaScript</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 transition-all duration-300">
+
+    <div class="max-w-6xl mx-auto p-6">
+
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-8">
+            <div>
+                <h1 class="text-4xl font-bold">⚡ Power of Plain JavaScript</h1>
+                <p class="text-gray-500">No React. No Vue. Just HTML + CSS + JS.</p>
+            </div>
+
+            <button id="themeBtn"
+                class="bg-black text-white px-4 py-2 rounded-lg">
+                Toggle Theme
+            </button>
+        </div>
+
+        <!-- Clock -->
+        <div class="card">
+            <h2 class="title">🕒 Live Clock</h2>
+            <p id="clock" class="text-3xl font-bold"></p>
+        </div>
+
+        <!-- Counter -->
+        <div class="card">
+            <h2 class="title">🔢 Counter</h2>
+
+            <div class="flex gap-3 items-center">
+                <button id="minus" class="btn">-</button>
+                <span id="count" class="text-3xl font-bold">0</span>
+                <button id="plus" class="btn">+</button>
+            </div>
+        </div>
+
+        <!-- Live Preview -->
+        <div class="card">
+            <h2 class="title">✍ Live Typing Preview</h2>
+
+            <input id="liveInput"
+                type="text"
+                placeholder="Type something..."
+                class="input">
+
+            <p id="preview"
+                class="mt-4 text-xl font-medium text-blue-600"></p>
+        </div>
+
+        <!-- Quote Generator -->
+        <div class="card">
+            <h2 class="title">💡 Random Quote Generator</h2>
+
+            <p id="quote" class="italic mb-4"></p>
+
+            <button id="quoteBtn" class="btn">
+                New Quote
+            </button>
+        </div>
+
+        <!-- Todo -->
+        <div class="card">
+            <h2 class="title">✅ Todo App (Saved in LocalStorage)</h2>
+
+            <div class="flex gap-3">
+                <input id="todoInput"
+                    class="input flex-1"
+                    placeholder="Add task...">
+
+                <button id="addTodo" class="btn">
+                    Add
+                </button>
+            </div>
+
+            <input id="search"
+                class="input mt-4"
+                placeholder="Search tasks...">
+
+            <ul id="todoList" class="mt-4 space-y-2"></ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
